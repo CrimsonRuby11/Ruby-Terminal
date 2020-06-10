@@ -45,14 +45,14 @@ public:
     static void help() {
         fstream f;
         string helpstr;
-        f.open("help.txt", ios::in);
+        f.open("help.rubyshell", ios::in);
         f.seekg(0, ios::beg);
+        if(!f) {
+            cout << "Error : File 'Help.rubyshell' not found, please place it in the directory";
+        }
         while(f) {
             getline(f, helpstr);
             cout << helpstr << endl;
-        }
-        if(!f) {
-            cout << "Error : File 'Help.txt' not found, please place it in the directory";
         }
         f.close();
     }
