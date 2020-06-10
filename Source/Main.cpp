@@ -39,6 +39,7 @@ string getUserInput() {
 }
 
 void runCommand(string input) {
+    transform(input.begin(), input.end(), input.begin(), ::tolower);
     if(input == "print") {
         string str;
         getline(cin, str);
@@ -50,6 +51,10 @@ void runCommand(string input) {
         char oper;
         cin >> a >> oper >> b;
         Standard::doMath(oper, a, b);
+    }
+
+    else if(input == "printfile") {
+        Standard::printFile();
     }
 
     else if(input == "clear") {
