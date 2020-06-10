@@ -42,14 +42,15 @@ public:
     }
 
     static void help() {
-        cout << "RUBY'S TERMINAL COMMANDS" << endl;
-        cout << endl;
-        cout << "help : show all commands" << endl;
-        cout << "print : prints a given string" << endl;
-        cout << "math : basic math operations like + ; - ; * ; / ; %" << endl;
-        cout << "clear : clears the screen" << endl;
-        cout << "exit : exits the program" << endl;
-        cout << "TYPE THE RESPECTIVE COMMAND AND PRESS ENTER";
+        fstream f;
+        string helpstr;
+        f.open("help.txt", ios::in);
+        f.seekg(0, ios::beg);
+        while(f) {
+            getline(f, helpstr);
+            cout << helpstr << endl;
+        }
+        f.close();
     }
 
     static void Exit() {

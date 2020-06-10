@@ -40,7 +40,8 @@ string getUserInput() {
 
 void runCommand(string input) {
     if(input == "print") {
-        string str; cin >> str;
+        string str;
+        getline(cin, str);
         Standard::printString(str);
     }
 
