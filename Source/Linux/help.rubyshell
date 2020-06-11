@@ -1,0 +1,13 @@
+RUBY'S TERMINAL HELP
+Type in the command and press enter to execute
+all commands are not case-sensitive
+
+Standard Commands :-
+help : shows the help screen
+print : prints a given string onto the console
+math : basic math operations {+ - * / ^ %}
+printfile : prints the contents of the file specified
+clear : clears the screen
+exit : exits the terminal
+
+Version : 1.0alpha
