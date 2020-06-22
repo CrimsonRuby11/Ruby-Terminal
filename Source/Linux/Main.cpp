@@ -2,6 +2,7 @@
 /*This is the main source*/
 #include <bits/stdc++.h>
 #include "Standard.h"
+#include "Math.h"
 using namespace std;
 
 // Public Variables
@@ -67,6 +68,13 @@ void runCommand(string input) {
 
     else if(input == "help") {
         Standard::help();
+    }
+
+    //Math Header File
+    else if(input == "pointsdistance") {
+        int x1, x2, y1, y2;
+        cin >> x1 >> y1 >> x2 >> y2;
+        cout << Math::pointdistance(x1, y1, x2, y2);
     }
 
     else {

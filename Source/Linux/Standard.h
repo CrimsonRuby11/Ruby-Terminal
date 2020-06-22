@@ -1,6 +1,5 @@
 // Standard Commands Class
 #include <bits/stdc++.h>
-#include <dirent.h>
 using namespace std;
 
 class Standard {
@@ -36,10 +35,6 @@ public:
 
     static void screenClear() {
         system("clear");
-    }
-
-    static void open() {
-        //ShellExecute
     }
 
     static void help() {
