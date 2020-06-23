@@ -17,3 +17,9 @@ Download g++ via the command
  `sudo apt install build-essential` 
  
  For ubuntu. For other distros, use the command of the package manager installed in the place of 'apt'
+ - Go to [github.com/CrimsonRuby11/ruby-terminal](www.github.com/CrimsonRuby11/ruby-terminal) and clone the package to your system.
+ - Open the folder, and into Source/Linux/ .
+ - Open a new terminal here
+ - Make sure g++ is installed correctly by typing in the command `g++ --version`.
+ - run the command `./Main`
+ - Enjoyy the package!
