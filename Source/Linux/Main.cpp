@@ -3,6 +3,7 @@
 #include <bits/stdc++.h>
 #include "Standard.h"
 #include "Math.h"
+#include "FileHandling.h"
 using namespace std;
 
 // Public Variables
@@ -75,6 +76,11 @@ void runCommand(string input) {
         int x1, x2, y1, y2;
         cin >> x1 >> y1 >> x2 >> y2;
         cout << Math::pointdistance(x1, y1, x2, y2);
+    }
+
+    //File Handling
+    else if(input == "file"){
+        file::openFile();
     }
 
     else {
