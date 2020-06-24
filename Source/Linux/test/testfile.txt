@@ -1,4 +1,7 @@
 Hello,
 This is a testfile of the extension .txt
 
-!!!!!!!!!!!@@@@@@@@@@@##############$$$$$$$$$$$$$$$$$$$$$
+!!!!!!!!!!!@@@@@@@@@@@##############$$$$$$$$$$$$$$$$$$$$$New lines have been added lol
+this one is a new line
+and this one
+

@@ -55,21 +55,13 @@ void runCommand(string input) {
         Standard::doMath(oper, a, b);
     }
 
-    else if(input == "printfile") {
-        Standard::printFile();
-    }
+    else if(input == "printfile") Standard::printFile();
 
-    else if(input == "clear") {
-        Standard::screenClear();
-    }
+    else if(input == "clear") Standard::screenClear();
 
-    else if(input == "exit") {
-        Standard::Exit();
-    }
+    else if(input == "exit") Standard::Exit();
 
-    else if(input == "help") {
-        Standard::help();
-    }
+    else if(input == "help") Standard::help();
 
     //Math Header File
     else if(input == "pointsdistance") {
@@ -79,19 +71,16 @@ void runCommand(string input) {
     }
 
     //File Handling
-    else if(input == "openfile"){
-        file::openFile();
-    }
+    else if(input == "openfile") file::openFile();
 
-    else if(input == "newfile") {
-        file::newfile();
-    }
+    else if(input == "newfile") file::newfile();
 
-    else if(input == "listc") {
-        file::listcontents();
-    }
+    else if(input == "listc") file::listcontents();
+
+    else if(input == "appendfile") file::append();
 
     else {
         cout << "Command not found : " << input;
+        cin.ignore();
     }
 }
