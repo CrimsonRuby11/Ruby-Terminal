@@ -13,5 +13,8 @@ exit : exits the terminal
 Math :-
 pointsdistance : input 4 float values of the order x1 y1 x2 y2 to get the distance between them in a 2d plane.
 
+File :-
+printfile : prints the contents of the file
+
 
 Version : 1.0alpha

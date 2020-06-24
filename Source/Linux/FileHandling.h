@@ -35,4 +35,43 @@ class file {
             }
             
         }
+
+        static void newfile() {
+            cout << "Enter the name of the new file : ";
+            string name; cin>>name;
+            fstream a;
+            a.open(name, ios::out);
+            if(a) {
+                cout << "File Created!" << endl;
+                cout << "What do you want to do? : ";
+                string inp; cin>>inp;
+                if(inp == "write") {
+                    cout << "Please type in your data to be recorded in the file :-" << endl << endl;
+                    string data;
+                    cin.ignore();
+                    getline(cin, data);
+                    a.seekg(0, ios::beg);
+                    a << data;
+                    cout << "Data written. Do you want to view the file? {Y / N} : ";
+                    char s; cin>>s;
+                    if(s == 'y' || s == 'Y') {
+                        a.close();
+                        a.open(name, ios::in | ios::out);
+                        while(a) {
+                            string out; getline(a, out);
+                            cout << out;
+                        }
+                        a.close();
+                        cout << endl << endl << "File Closed and Exited";
+                    }
+                }
+            }
+            else {
+                cout << "Error in creating the file" << endl;
+            }
+        }
+
+        static void listcontents() {
+            system("ls");
+        }
 };

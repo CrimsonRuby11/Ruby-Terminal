@@ -79,8 +79,16 @@ void runCommand(string input) {
     }
 
     //File Handling
-    else if(input == "file"){
+    else if(input == "openfile"){
         file::openFile();
+    }
+
+    else if(input == "newfile") {
+        file::newfile();
+    }
+
+    else if(input == "listc") {
+        file::listcontents();
     }
 
     else {
