@@ -9,7 +9,7 @@ Use the Ruby shell's integrated functions which helps a user to do various proce
 Currently under construction. Feel free to fork and develop!
 
 ### How to Run
-This shell is currently only usable in a linux shell. Windows compatibility is still in progress. 
+This shell is currently only usable in a linux shell. For Windows, Head to the Releases tab and download the .rar file, and run the .exe file!
 
 Download g++ via the command
 
