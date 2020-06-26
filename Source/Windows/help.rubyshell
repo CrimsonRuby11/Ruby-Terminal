@@ -1,0 +1,23 @@
+RUBY'S TERMINAL HELP
+Type in the command and press enter to execute
+all commands are not case-sensitive
+
+Standard Commands :-
+help : shows the help screen.
+print : prints a given string onto the console.
+math : basic math operations {+ - * / ^ %}.
+printfile : prints the contents of the file specified.
+clear : clears the screen.
+exit : exits the terminal.
+
+Math :-
+pointsdistance : input 4 float values of the order x1 y1 x2 y2 to get the distance between them in a 2d plane.
+
+File :-
+openfile : contains options to print a file's contents, clear the file, append to the file, and more.
+newfile : create a new file and write contents to the file.
+listc : lists the contents of the folder in which the program is run.
+appendfile : adds a new empty line to the file and a specified paragraph of text.
+
+
+Version : 1.0alpha
