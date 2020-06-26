@@ -34,7 +34,7 @@ class Standard {
         }
 
         static void screenClear() {
-            system("clear");
+            system("cls");
         }
 
         static void help() {
